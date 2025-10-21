@@ -22,4 +22,10 @@ route::get('/hello', function () {
     return "Hello, World!";
 });
 
+
+
 route::get('/home', [PageController::class, 'home']);
+route::get('/login', [PageController::class, 'login'])-> name('login');
+route::get('/data', [PageController::class, 'data'])->name('data');
+
+
