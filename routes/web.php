@@ -5,6 +5,7 @@ use App\Http\Controllers\PageController;
 use App\Models\Book;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\StudentController;
+use App\Http\Controllers\EmployeeController;
 
 /*
 |--------------------------------------------------------------------------
@@ -32,6 +33,8 @@ route::get('/login', [PageController::class, 'login'])-> name('login');
 route::get('/data', [PageController::class, 'data'])->name('data');
 route::resource('books', BookController::class);
 Route::resource('students', StudentController::class);
+Route::resource('employees', EmployeeController::class);
+
 
 
 
