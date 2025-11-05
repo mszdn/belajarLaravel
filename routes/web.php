@@ -31,9 +31,9 @@ route::get('/hello', function () {
 route::get('/home', [PageController::class, 'home']);
 route::get('/login', [PageController::class, 'login'])-> name('login');
 route::get('/data', [PageController::class, 'data'])->name('data');
-route::resource('books', BookController::class);
-Route::resource('students', StudentController::class);
-Route::resource('employees', EmployeeController::class);
+route::resource('books', BookController::class) ->name('*', 'books.');
+Route::resource('students', StudentController::class) ->name('*', 'students.');
+Route::resource('employees', EmployeeController::class) ->name('*', 'employees.');
 
 
 
