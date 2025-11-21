@@ -47,7 +47,7 @@
 
     <!-- Content -->
     <div id="content">
-        <main class="p-4">
+        <main class="px-3">
             @yield('content')
         </main>
     </div>
